@@ -1,11 +1,11 @@
-sayName: firstworkflow
+Name: firstworkflow
 on: workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - print greeting
+      - name: print greeting
         run: echo "hello world!"
-      - print end message
+      - name: print end message
         run: echo "say good bye!"
     
